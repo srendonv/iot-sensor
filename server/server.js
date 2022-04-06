@@ -5,6 +5,7 @@ const express = require('express');
 const cors = require('cors');
 // get MongoDB driver connection
 const dbo = require('./db/conn');
+const {seedDB} = require('./db/seedDB');
 
 const PORT = process.env.PORT || 5000;
 const app = express();
@@ -25,6 +26,9 @@ dbo.connectToServer(function (err) {
     console.error(err);
     process.exit();
   }
+
+  // Fill database with data
+  seedDB();
 
   // start the Express server
   app.listen(PORT, () => {

@@ -1,37 +1,23 @@
 {
-  "name": "iot-sensor",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@reduxjs/toolkit": "^1.8.1",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-redux": "^7.2.8",
-    "react-scripts": "5.0.0",
-    "react-table": "^7.7.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+    "name": "IoT sensor data",
+    "version": "1.0.0",
+    "description": "Full stack app to show IoT sensor on a fully functional react-table",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/srendonv/iot-sensor.git"
+    },
+    "keywords": [
+        "mongodb",
+        "node",
+        "express",
+        "atlas",
+        "react",
+        "react-table"
     ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+    "author": "Santiago Rendon Valencia",
+    "license": "Apache 2.0",
+    "bugs": {
+        "url": "https://github.com/srendonv/iot-sensor/issues"
+    },
+    "homepage": "https://github.com/srendonv/iot-sensor/blob/main/README.md"
 }

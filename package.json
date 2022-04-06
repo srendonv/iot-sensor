@@ -21,6 +21,7 @@
     },
     "homepage": "https://github.com/srendonv/iot-sensor/blob/main/README.md",
     "scripts": {
+        
         "frontend": "cd app && npm start",
         "api": "cd server && nodemon server.js",
         "dev": "concurrently --kill-others-on-fail \"npm run api\" \"npm run frontend\"",

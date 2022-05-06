@@ -64,11 +64,17 @@ function App() {
   )
 
   return (
+    <>
+      <h1 className="text-red-300 font-bold underline">
+      Hello world!
+    </h1>
     <div className="App">
       <header className="App-header">
         <Table columns={columns} data={storeData}/>
       </header>
     </div>
+    </>
+
   );
 }
 

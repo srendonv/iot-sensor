@@ -1,13 +1,7 @@
-import React,{useState, useEffect} from 'react';
-// import {Table} from 'react-bootstrap';
+import React,{useState} from 'react';
 import {useTable, useBlockLayout, useGlobalFilter, useSortBy, useAsyncDebounce} from 'react-table';
 import scrollbarWidth from './scrollbarWidth';
 import { FixedSizeList } from 'react-window';
-import axios from 'axios';
-
-import {useSelector, useDispatch} from 'react-redux';
-import {setSensorData, selectTable} from './tableSlice';
-
 
 const TWO_HUNDRED_MS = 100;
 
@@ -31,7 +25,7 @@ function GlobalFilter({preGlobalFilteredRows, globalFilter,setGlobalFilter}){
 }
 
 /*
- * Table component function as global filter
+ * Table component function
 */
 export function Table({ columns, data }){
   
